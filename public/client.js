@@ -30,10 +30,26 @@ function doMath (){
       type: 'POST',
       data: objectToSend,
       success: function (response){
-        console.log('back from server with', response);
+        console.log('Post route:', response);
+        //update DOM ??
+        getCalcs();
 
       }// end success
     }); //end ajax
-
-  
 }//end doMath
+
+function getCalcs(){
+  // make ajax call to server for inventory array
+  $.ajax({
+    url: '/calculations',
+    type: 'GET',
+    success: function( response ){
+      console.log( 'Get route:', response );
+      // empty outputDiv
+      // $( '#outputDiv' ).empty();
+      // loop through inventory and append each to outputDiv
+
+
+    } // end success
+  }); // end ajax
+} // end getCalcs

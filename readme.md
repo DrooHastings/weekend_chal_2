@@ -22,7 +22,7 @@ The logic for the calculator needs to be housed on the Server,
 Once the server receives it, build out logic to compute the numbers in 1 of 4 different ways.
 [x] store convert value1 and value 2 into numbers using parseInt()
 [x] switch?? or conditional statement that checks the 'type' property
-[] execute math based on type
+[x] execute math based on type
 
 
 The server should be able to handle Addition, Subtraction, Multiplication, and Division.
