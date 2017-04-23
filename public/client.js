@@ -10,9 +10,12 @@ $('#clear-calc').on('click', clear);
 
 function clear(){
   console.log('in clear');
-  $('#value1').empty();
-  $('#value2').empty();
-  $('.results-div').empty();
+
+  $('results-div').empty();
+
+
+
+
 } //end clear
 
 

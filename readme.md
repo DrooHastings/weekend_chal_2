@@ -28,11 +28,11 @@ Once the server receives it, build out logic to compute the numbers in 1 of 4 di
 The server should be able to handle Addition, Subtraction, Multiplication, and Division.
 
 Once the calculation is complete, it should be sent back down to the client side app
-[] send back as an object (look at Dev's example and guessing-game)
+[x] send back as an object (look at Dev's example and guessing-game)
 
 where it should be displayed on the DOM.
-[](look at Dev's example and guessing-game)
-[] appending to results div (answer var on server-side)
+[x](look at Dev's example and guessing-game)
+[x] appending to results div (answer var on server-side)
 
 Finally, build a 'clear' button that resets the whole experience.
 []build a load calculator function like we did with the game?
