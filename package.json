@@ -1,0 +1,20 @@
+{
+  "name": "weekend_chal_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mong005e/weekend_chal_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mong005e/weekend_chal_2/issues"
+  },
+  "homepage": "https://github.com/Mong005e/weekend_chal_2#readme"
+}
