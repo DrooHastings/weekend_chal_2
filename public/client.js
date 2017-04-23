@@ -45,9 +45,11 @@ function getCalcs(){
     type: 'GET',
     success: function( response ){
       console.log( 'Get route:', response );
-      // empty outputDiv
-      // $( '#outputDiv' ).empty();
-      // loop through inventory and append each to outputDiv
+      // empty resultsDiv
+      $( '.results-div' ).empty();// this may not be necessary
+      // append each to resultsDiv
+      $('.results-div').append('<p id ="answer">' + response.result + '</p>' );
+
 
 
     } // end success
