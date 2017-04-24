@@ -10,7 +10,7 @@ where the client side will take in the values (in 2 input text fields)
 and the type of mathematical operation (selected using a button on the DOM).
 [x] build 4 buttons on the DOM
 [x]  event listeners for each button - doing a drop down instead.  
-[]  this works as a drop down?
+[x]  this works as a drop down?
 
 Each of the numerical values and type of mathematical operation will be bundled up in an object and then sent to the server via a POST.
 So when the object is sent, it should look something like this: { x: 3, y: 4, type: Add }
