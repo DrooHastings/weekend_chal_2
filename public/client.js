@@ -6,18 +6,12 @@ function onReady (){
 //event listeners
 $('#do-math').on('click', doMath);
 $('#clear-calc').on('click', clear);
+$('.press').on('click', pushValues);
 }//end onReady
 
 function clear(){
-  console.log('in clear');
-
   $('results-div').empty();
-
-
-
-
 } //end clear
-
 
 
 function doMath (){
@@ -52,9 +46,22 @@ function getCalcs(){
       $( '.results-div' ).empty();// this may not be necessary
       // append each to resultsDiv
       $('.results-div').append('<p id ="answer">' + response.result + '</p>' );
-
-
-
     } // end success
   }); // end ajax
 } // end getCalcs
+
+function pushValues (){
+  var buttonPressed =$(this).data('number');
+  // console.log(buttonPressed);
+  values.push(buttonPressed);
+  calculateValues();// right now only adding vals in the array
+}// end pushValues
+
+var values = [];
+function calculateValues(){
+values.reduce(function (a,b){
+  var boston = a + b;
+  console.log('sum of values is: ' + boston);
+  return boston;
+}, 0); // end annonymous func that calculates buttons pushed on DOM
+} //end calculateValues

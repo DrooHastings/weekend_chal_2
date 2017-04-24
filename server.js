@@ -28,22 +28,22 @@ app.post ('/doMath', function (req, res){
 
   if (type === 'Add') {
     answer = (x+y);
-    // console.log('I will be adding' + x + '' + y + answer);
+
 
   }
   else if (type === 'Subtract') {
     answer = (x-y);
-    // console.log('I will be subtracting ' + x + '' + y + answer);
+
 
   }
   else if (type === 'Multiply') {
     answer = (x*y);
-    // console.log('I will be multiplying ' + x + '' + y + answer);
+
   }
 
   else {
     answer = (x/y);
-    // console.log('I will be dividing ' + x +  '' + y + answer);
+    
   }
 
 
